@@ -1,9 +1,7 @@
-from django.urls import path
-
-from cats.views import cat_list
+from django.urls import path, include
 
 urlpatterns = [
-   path('cats/', cat_list),
+   path('', include('cats.urls')),
 ]
 
 
